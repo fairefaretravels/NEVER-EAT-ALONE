@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Never Eat Alone Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Never Eat Alone</h1>
+    <p>Your Table, Connected Live</p>
+    <button onclick="scrollToSection('how-it-works')">See How It Works</button>
+    <button onclick="scrollToSection('restaurants')">For Restaurants</button>
+    <div class="tablet-demo">
+      <div id="video-frame" class="video-frame">
+        <div id="camera-mode">Face + Plate</div>
+        <div id="timer">20:00</div>
+        <button onclick="toggleCamera()">Toggle Camera Mode</button>
+        <button onclick="startTimer()">Start Session</button>
+        <button onclick="endSession()">End Session</button>
+      </div>
+      <div class="mini-game">
+        <button onclick="playGame()">Play Mini Game</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- How It Works -->
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Choose a participating restaurant.</li>
+      <li>Invite a friend or join a remote guest.</li>
+      <li>Chat, play mini-games, enjoy your meal.</li>
+      <li>End session safely with privacy controls.</li>
+    </ol>
+  </section>
+
+  <!-- Restaurant Section -->
+  <section id="restaurants">
+    <h2>Bring Never Eat Alone to Your Restaurant</h2>
+    <p>Attract new diners and boost off-peak revenue.</p>
+    <form id="restaurant-form">
+      <input type="text" placeholder="Restaurant Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="City" required>
+      <button type="submit">Become a Pilot Partner</button>
+    </form>
+  </section>
+
+  <!-- Sign-up / Waitlist -->
+  <section id="signup">
+    <h2>Join the Waitlist</h2>
+    <form id="user-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <select>
+        <option>Diner</option>
+        <option>Restaurant</option>
+      </select>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
